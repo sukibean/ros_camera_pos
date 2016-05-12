@@ -30,6 +30,8 @@ catkin_package(
 
 include_directories(
   ${catkin_INCLUDE_DIRS}
+  ${CATKIN_DEVEL_PREFIX}/include
+  /usr/include/qt5
   ${${PROJECT_NAME}_SOURCE_DIR}/include/${PROJECT_NAME}
 )
 
