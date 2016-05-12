@@ -182,7 +182,7 @@ int main(int argc, char** argv)
         if( !prevgray.empty() && ros::ok())
         {
             calcOpticalFlowFarneback(prevgray, gray, uflow, 0.5, 3, 15, 3, 5, 1.2, 0);
-            0("after calcOpticalFlowFarneback");
+            ROS_WARN_STREAM("after calcOpticalFlowFarneback");
 
             cvtColor(prevgray, cflow, COLOR_GRAY2BGR);
             cflow.copyTo(cflow1);
